@@ -1,0 +1,13 @@
+<?php
+
+include "Team.php";
+
+$team = new Team("Dublin");
+
+$team->finalScore(3, 1);
+$team->finalScore(2, 0);
+$team->finalScore(1, 1);
+
+echo $team->getGoalAverage();
+
+?>
